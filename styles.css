@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.atm {
+  position: relative;
+  max-width: 50rem;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.upper-atm {
+  background-color: #ced4da;
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.side-buttons-left {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.first-screen,
+.second-screen {
+  background-color: #f1f3f5;
+  width: 30rem;
+  height: 22rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.second-screen {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr;
+}
+.flex-data {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.screen-paragraf-enter-pin {
+  font-size: 1.8rem;
+}
+.bold {
+  font-weight: 700;
+}
+.grid-long {
+  grid-column: span 2;
+}
+.screen-paragrad-half {
+  height: 2.5rem;
+}
+.input-result {
+  background-color: #f1f3f5;
+  border: none;
+
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.input-money {
+  background-color: #f1f3f5;
+  border: none;
+  width: 100%;
+  font-size: 1.4rem;
+}
+.side-buttons-right {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.side-button {
+  width: 5rem;
+  height: 4rem;
+  background-color: #868e96;
+  border: none;
+  border-radius: 5px;
+}
+
+.lower-atm {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1.8fr;
+  gap: 1rem;
+  padding: 2rem 6rem;
+  background-color: #d8dde1;
+}
+.button-values {
+  border: none;
+  background-color: #a5aaae;
+  border-radius: 5px;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.green {
+  background-color: #8ce99a;
+}
+.yellow {
+  background-color: #ffd43b;
+}
+.red {
+  background-color: #fa5252;
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 44rem) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@media (max-width: 38rem) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 32rem) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 28rem) {
+  html {
+    font-size: 50%;
+  }
+}

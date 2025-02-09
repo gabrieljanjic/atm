@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="atm-log.png">
+  </head>
+  <body>
+    <main class="atm">
+      <section class="upper-atm">
+        <div class="side-buttons side-buttons-left">
+          <button class="side-button"></button>
+          <button class="side-button"></button>
+          <button class="side-button"></button>
+          <button class="side-button"></button>
+        </div>
+        <div class="first-screen">
+          <p class="screen-paragraf-half screen-paragraf-enter-pin bold">Enter pin:</p>
+            <input class="input-result" type="text" readonly>
+        </div>
+        <div class="second-screen hidden">
+          <div class="flex-data">
+            <p class="screen-paragraf bold">Name:</p>
+            <p class="name-value"></p>
+          </div>
+          <div class="flex-data">
+            <p class="screen-paragraf bold" >Surname:</p>
+            <p class="surname-value"></p>
+          </div>
+          <div class="flex-data">
+            <p class="screen-paragraf bold">Money:</p>
+            <p class="money-value"></p>
+          </div>
+          <div class="flex-data">
+            <p class="screen-paragraf bold">How much you want to withdraw?</p>
+            <input class="input-money" type="text" readonly>
+          </div>
+          
+        </div>
+        <div class="side-buttons side-buttons-right">
+          <button class="side-button"></button>
+          <button class="side-button"></button>
+          <button class="side-button"></button>
+          <button class="side-button"></button>
+        </div>
+      </section>
+      <section class="lower-atm">
+        <input class="button-values" type="button" value="1"></input>
+        <input class="button-values" type="button" value="2"></input>
+        <input class="button-values" type="button" value="3"></input>
+        <input class="button-values green" type="button" value="accept"></input>
+        <input class="button-values" type="button" value="4"></input>
+        <input class="button-values" type="button" value="5"></input>
+        <input class="button-values" type="button" value="6"></input>
+        <input class="button-values yellow" type="button" value="delete"></input>
+        <input class="button-values" type="button" value="7"></input>
+        <input class="button-values" type="button" value="8"></input>
+        <input class="button-values" type="button" value="9"></input>
+        <input class="button-values red" type="button" value="refuse"></input>
+        <input class="button-values" type="button" value=""></input>
+        <input class="button-values" type="button" value="0"></input>
+        <input class="button-values" type="button" value=""></input>
+        <input class="button-values" type="button" value=""></input>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
