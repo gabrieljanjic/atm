@@ -98,6 +98,9 @@ body {
   padding: 2rem 6rem;
   background-color: #d8dde1;
 }
+.zero {
+  grid-column: span 3;
+}
 .button-values {
   border: none;
   background-color: #a5aaae;
@@ -108,6 +111,10 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  transition: all 0.2s;
+}
+.button-values:hover {
+  transform: scale(1.05);
 }
 .green {
   background-color: #8ce99a;
@@ -117,6 +124,9 @@ body {
 }
 .red {
   background-color: #fa5252;
+}
+.white {
+  background-color: #f8f9fa;
 }
 .hidden {
   display: none;

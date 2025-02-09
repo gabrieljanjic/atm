@@ -25,17 +25,21 @@ let isEnteringMoney = false;
 let korisnik = null;
 buttons.forEach(function (button) {
   button.addEventListener('click', function () {
-    if (button.value === 'refuse') {
+    if (button.value === 'Refuse') {
+      inputValue = '';
+      inputResult.value = '';
+      inputMoney.value = '';
+    } else if (button.value === 'Logout') {
       inputValue = '';
       inputResult.value = '';
       inputMoney.value = '';
       isEnteringMoney = false;
       firstScreen.classList.remove('hidden');
       secondScreen.classList.add('hidden');
-    } else if (button.value === 'delete') {
+    } else if (button.value === 'Delete') {
       inputValue = inputValue.slice(0, -1);
       inputResult.value = inputValue;
-    } else if (button.value === 'accept') {
+    } else if (button.value === 'Accept') {
       if (!isEnteringMoney) {
         finalPin = inputValue;
         inputValue = '';
